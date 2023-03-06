@@ -1,0 +1,146 @@
+body{
+    background-color: #313131;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+section{
+    height:100vh;
+    width: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    .image-1 {
+    background-image: url("img/banner.jpg")
+    }
+
+    .image-2 {
+    background-image: url("img/banner2.jfif");
+    }
+    .image-3 {
+    background-image: url("");
+    }
+    .image-4 {
+    background-image: url("");
+    }
+    #item-menu{
+        font-weight: 400;
+        font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        text-align: end;
+        background-color: rgba(255, 255, 255);
+    }
+
+    #scroll{
+        position: relative;
+        overflow: hidden;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-bottom: 0.5%;
+        box-shadow: 1px 1px 5px #000;
+    }
+    #fijo{
+        position: fixed;
+    }
+    #padd {
+        padding: 1%; 
+    }
+
+    #paddT{
+        font-size: 16px;
+        padding: 6%;
+    }
+
+    #paddMayus{
+        padding:5%;
+    }
+
+    #padd2 {
+        padding: 6%; 
+    }
+
+    #appear{
+        display: none;
+    }
+
+    @media (max-width: 900px) {
+        #padd {
+        padding: 3%;
+    }
+    
+    #c {
+        background-color: rgba(255, 255, 255);
+        border-radius: 20px;
+        margin-left: 8.2%;
+        margin-right: 8.2%;
+        height: auto;
+    }
+    }
+    @media (max-width: 700px) {
+        #padd {
+        padding: 5%;
+    }
+    #padd2 {
+        padding: 7%;
+    }
+    }
+
+    @media (max-width: 600px) {
+        #padd {
+        padding: 15%;
+    }
+    #padd2 {
+        padding: 17%;
+    }
+    }
+
+    @media (max-width: 500px) {
+        #padd {
+        padding: 12%;
+    }
+    #padd2 {
+        padding: 15%;
+    }
+    }
+
+    @media (max-width: 400px) {
+        #padd {
+        padding: 18%;
+    }
+    #padd2 {
+        padding: 20%;
+    }
+    }
+
+    @media (max-width: 300px) {
+        #padd {
+        padding: 13%;
+    }
+
+    #padd2 {
+        padding: 15%;
+    }
+    }
+    
+    @keyframes texto
+        {
+        from {color: rgb(0, 0, 0); font-size:  16px;}
+        to {color: rgb(218, 218, 218); font-size:  16.3px;}
+        }
+    a:hover {
+        cursor: pointer;
+        animation: texto 500ms; 
+        color: rgb(218, 218, 218);
+        font-size:  16.3px;
+        }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #c {
+        background-color: rgba(255, 255, 255);
+        border-radius: 20px;
+        margin-left: 8.2%;
+        margin-right: 8.2%;
+        height: auto;
+    }

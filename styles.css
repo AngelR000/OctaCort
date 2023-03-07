@@ -198,7 +198,6 @@ section{
         background: #FFF;
         position: relative;
         margin: 2% auto;
-        transition: all 5s ease-in-out;
     }
 
     #cerrar{

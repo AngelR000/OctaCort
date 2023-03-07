@@ -13,27 +13,27 @@
 <body>
     <section class="image-1" style="display:inline-block">
         <!-- MENU -->
-        <section id="fijo">
+        <div id="fijo">
           <div class="container fs-6" id="scroll">
               <div class="row">
                 <div class="col text-start" id="item-menu">
                   <img src="img/logo.jpg" alt="" width="40%" height="auto">
                 </div>
                 <div class="col" id="item-menu">
-                <br><a href="index.html">Inicio</a>
+                <br><a href="index.html" id="a">Inicio</a>
                 </div>
                 <div class="col" id="item-menu">
-                  <br><a href="qsomos.html">¿Quienes Somos?</a>
+                  <br><a href="qsomos.html" id="a">¿Quienes Somos?</a>
                 </div>
                 <div class="col" id="item-menu">
-                  <br><a href="productos.html" style="margin-right: 15%;">Productos </a>
+                  <br><a href="productos.html" id="a" style="margin-right: 15%;">Productos </a>
                 </div>
                 <div class="col" id="item-menu">
-                  <br><a href="contacto.html" style="margin-right: 30%;">Contactos</a>
+                  <br><a href="contacto.html" id="a" style="margin-right: 30%;">Contactos</a>
                 </div>
               </div>
           </div>
-        </section>
+        </div>
     
         <!-- Termina MENU -->
 
@@ -43,39 +43,193 @@
         <div class="text-center" id="c" style="display:inline-block; padding: 3%;">
           <p class="fs-3" id="paddMayus"> <b> Nuestros Productos </b> </p>
           <div class="row h5">
-            <div class="col-lg-4 align-self-top">
+            <div class="col-lg-4 align-self-top" >
+              
+              <a href="#popupGaleria" id="texto-prod">
+              <div id="producto">
              <b> <p> Armarios </p></b> <br>
-              <img src="img/productos/Armarios.jpg" alt="" width="80%" style="border-radius: 20px;">
+              <img src="img/productos/Armarios.jpg" alt="" width="80%" style="border-radius: 20px;" >
               <br> <p class="" id="paddT"> Armarios a medida para tener organizado las prendas de vestir y calzado.</p>
             </div>
+            <!--Galeria individual-->
+            <div id="popupGaleria" class="overlay">
+              <div id="popupBody">
+                  <h2 style="padding-top: 2%; font-weight: bold;">Galeria Armarios/Closets</h2>
+                  <a id="cerrar" href="#c">&times;</a>
+                  <div class="popupContent" id="popCont">
+                      <div class="row" style="padding-bottom: 2%; padding-top: 2%;">
+                        <div class="col-lg-3 align-self-top" >
+                          <img src="galeria/closet1.jpg" width="80%" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-lg-3 align-self-top" >
+                          <img src="galeria/closet2.jpg" width="80%" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-lg-3 align-self-top" >
+                          <img src="galeria/closet3.jpg" width="50%" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-lg-3 align-self-top" >
+                          <img src="galeria/closet4.jpg" width="80%" alt="" style="border-radius: 20px;">
+                        </div>
+                      </div>
+
+                      <div class="row" style="padding-bottom: 2%; padding-top: 2%;">
+                        <div class="col-lg-3 align-self-top" >
+                          <img src="galeria/closet5.jpg" width="80%" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-lg-3 align-self-top" >
+                          <img src="galeria/closet6.jpg" width="80%" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-lg-3 align-self-top" >
+                          <img src="galeria/closet7.jpg" width="60%" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-lg-3 align-self-top" >
+                          <img src="galeria/closet8.jpg" width="80%" alt="" style="border-radius: 20px;">
+                        </div>
+                      </div>
+                    
+                  </div>
+              </div>
+          </div>
+          </a>
+            </div>
+
+
             <div class="col-lg-4 align-self-top">
+              <a href="#popupGaleria2" id="texto-prod">
+              <div id="producto">
               <b> <p> Cocinas </p></b> <br>
               <img src="img/productos/Cocinas.png" alt="" width="73%" style="border-radius: 20px;">
               <br> <p class="" id="paddT"> Cocinas a medida optimizadas al espacio, funcionales y adaptadas a nuestro ritmo de vida.</p>
             </div>
+
+             <!--Galeria individual-->
+             <div id="popupGaleria2" class="overlay">
+              <div id="popupBody">
+                  <h2 style="padding-top: 2%; font-weight: bold;">Galeria Cocinas</h2>
+                  <a id="cerrar" href="#c">&times;</a>
+                  <div class="popupContent" id="popCont">
+                      <div class="row" style="padding-bottom: 2%; padding-top: 2%;">
+                        <div class="col-lg-3 align-self-top" style="padding: 1%;">
+                          <img src="galeria/Cocina1.jpg" width="60%" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-lg-3 align-self-top" style="padding: 1%;">
+                          <img src="galeria/Cocina2.jpg" width="80%" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-lg-3 align-self-top" style="padding: 1%;">
+                          <img src="galeria/Cocina3.jpg" width="40%" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-lg-3 align-self-top" style="padding: 1%;">
+                          <img src="galeria/Cocina4.jpg" width="60%" alt="" style="border-radius: 20px;">
+                        </div>
+                      </div>
+
+                      <div class="row" style="padding-bottom: 2%; padding-top: 2%;">
+                        <div class="col-lg-4 align-self-top" style="padding: 1%;">
+                          <img src="galeria/Cocina5.jpg" width="80%" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-lg-4 align-self-top" style="padding: 1%;">
+                          <img src="galeria/Cocina6.jpg" width="80%" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-lg-4 align-self-top" style="padding: 1%;">
+                          <img src="galeria/Cocina7.jpg" width="60%" alt="" style="border-radius: 20px;">
+                        </div>
+                      </div>
+                    
+                  </div>
+              </div>
+          </div>
+        </a>
+            </div>
+
+
             <div class="col-lg-4 align-self-top">
+              <div id=""> 
               <b> <p>Mobiliario de Negocios </p>  </b> <br>
               <img src="img/productos/MobiliarioNegocios.jpg" alt="" width="90%" style="border-radius: 20px;">
               <br> <p class="" id="paddT"> Mobiliario para negocios a medida que cumplan los requerimientos del local comercial con un toque distintivo.</p>
             </div>
             
+            </div>
+            
           </div>
-          <div style="padding: 3%;"></div>
+          <div style="padding: 3%;" id="#c2"></div>
           <div class="row h5" >
             <div class="col-lg-4 align-self-top">
+              <a href="#popupGaleria3" id="texto-prod">
+              <div id="producto">
               <b> <p> Muebles de Baño </p></b> <br>
               <img src="img/productos/MueblesBano.jpg" alt="" width="40%" style="border-radius: 20px;">
               <br> <p class="" id="paddT"> Muebles de baño a medida para tener todo ordenado y limpio.</p>
             </div>
+            <!--Galeria individual-->
+            <div id="popupGaleria3" class="overlay">
+              <div id="popupBody">
+                  <h2 style="padding-top: 2%; font-weight: bold;">Galeria Baño</h2>
+                  <a id="cerrar" href="#c2">&times;</a>
+                  <div class="popupContent" id="popCont">
+                      <div class="row" style="padding-bottom: 2%; padding-top: 2%;">
+                        <div class="col align-self-top" >
+                          <img src="galeria/Bano.png" width="70%" alt="" style="border-radius: 20px;">
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </a>
+            </div>
+
+
+
             <div class="col-lg-4 align-self-top">
+              <a href="#popupGaleria4" id="texto-prod">
+              <div id="producto">
               <b> <p>Puertas </p> </b> <br>
               <img src="img/productos/Puertas.jpg" alt="" width="80%" style="border-radius: 20px;">
               <br> <p class="" id="paddT"> Puertas a medida para dar privacidad y decorativas. Puertas de entrada, puertas interiores practicables y puertas correderas o abatibles.</p>
             </div>
+            <!--Galeria individual-->
+            <div id="popupGaleria4" class="overlay">
+              <div id="popupBody">
+                  <h2 style="padding-top: 2%; font-weight: bold;">Galeria Puertas</h2>
+                  <a id="cerrar" href="#c2">&times;</a>
+                  <div class="popupContent" id="popCont">
+                      <div class="row" style="padding-bottom: 2%; padding-top: 2%;">
+                        <div class="col-lg-6 align-self-top" >
+                          <img src="galeria/puerta1.jpg" width="20%" alt="" style="border-radius: 20px;">
+                        </div>
+                        <div class="col-lg-6 align-self-top" >
+                          <img src="galeria/puerta2.jpg" width="20%" alt="" style="border-radius: 20px;">
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </a>
+            </div>
+
+
             <div class="col-lg-4 align-self-top">
+              <a href="#popupGaleria5" id="texto-prod">
+              <div id="producto">
               <b> <p>Muebles a Medida </p> </b> <br>
               <img src="img/productos/MueblesMedida.jpg" alt="" width="80%" style="border-radius: 20px;">
               <br> <p id="paddT"> Muebles a la medida que se adapten a las necesidades y gustos que no se encuentran en el mercado.</p>
+            </div>
+            <!--Galeria individual-->
+            <div id="popupGaleria5" class="overlay">
+              <div id="popupBody">
+                  <h2 style="padding-top: 2%; font-weight: bold;">Galeria de Otros Productos</h2>
+                  <a id="cerrar" href="#c2">&times;</a>
+                  <div class="popupContent" id="popCont">
+                      <div class="row" style="padding-bottom: 2%; padding-top: 2%;">
+                        <div class="col align-self-top" >
+                          <img src="galeria/Otros.jpg" width="20%" alt="" style="border-radius: 20px;">
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </a>
             </div>
           </div>
           </div>

@@ -30,6 +30,9 @@ section{
         background-color: rgba(255, 255, 255);
     }
 
+    #logo{
+        width: 40%;
+    }
     #scroll{
         position: relative;
         overflow: hidden;
@@ -40,6 +43,7 @@ section{
     }
     #fijo{
         position: fixed;
+        width: 100%;
     }
     #padd {
         padding: 1%; 
@@ -81,6 +85,13 @@ section{
     }
     #padd2 {
         padding: 7%;
+    }
+    #popCont{
+        overflow: scroll;
+        display: flex;
+    }
+    #logo{
+        width: 130%;
     }
     }
 
@@ -126,13 +137,13 @@ section{
         from {color: rgb(0, 0, 0); font-size:  16px;}
         to {color: rgb(218, 218, 218); font-size:  16.3px;}
         }
-    a:hover {
+    #a:hover {
         cursor: pointer;
         animation: texto 500ms; 
         color: rgb(218, 218, 218);
         font-size:  16.3px;
         }
-    a {
+    #a {
         text-decoration: none;
         color: black;
     }
@@ -144,3 +155,66 @@ section{
         margin-right: 8.2%;
         height: auto;
     }
+
+    @keyframes product
+        {
+        from {
+            width: 100%;
+        }
+
+        to {
+            width: 110%;
+        }
+        }
+
+    #producto:hover{
+        cursor: pointer;
+        animation: product 500ms;
+        width: 110%;
+    }
+
+    .overlay { 
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+      }
+      .overlay:target{
+        visibility: visible;
+        opacity: 1;
+      }
+
+      #popupBody{
+        width: 90%;
+        height: auto;
+        padding: 0%;
+        border-radius: 15px;
+        box-shadow: 0 0 5px #CCC;
+        background: #FFF;
+        position: relative;
+        margin: 2% auto;
+        transition: all 5s ease-in-out;
+    }
+
+    #cerrar{
+        position: absolute;
+        top: 0px;
+        right: 6px;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #F00;
+    }
+    #texto-prod{
+        color: #000;
+        text-decoration: none;
+    }
+
+    
